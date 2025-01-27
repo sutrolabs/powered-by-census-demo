@@ -81,7 +81,7 @@ export default function Index({
   return (
     <>
       <Header title="Integrations / CRM" />
-      <div className="mx-auto flex h-full w-full max-w-[1200px] flex-col gap-8 px-8 py-6">
+      <div className="mx-auto flex h-full w-full max-w-[1200px] flex-col gap-8 overflow-y-auto px-8 py-6">
         <p className="  text-neutral-500">
           Get access to relevant retailer and trend data right within your everyday sales tools.
         </p>

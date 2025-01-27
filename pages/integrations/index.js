@@ -1,11 +1,17 @@
+import Head from "next/head"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 import Button from "@components/Button"
 import Header from "@components/Structural/Header/Header"
 
 export default function Index() {
+  const router = useRouter()
   return (
     <>
+      <Head>
+        <title>Integrations | Census Embedded Demo App</title>
+      </Head>
       <Header title="Integrations" />
       <div className="flex h-full flex-col gap-6 px-8 py-6">
         <div className="mx-auto flex w-full max-w-[1400px] flex-col items-center gap-5 rounded-lg bg-neutral-100 p-8">
@@ -20,12 +26,18 @@ export default function Index() {
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Button className="min-w-[300px] self-center">
+            <Button
+              className="min-w-[300px] self-center"
+              onClick={() => router.push("integrations/export-crm")}
+            >
               Connect your CRM
               <i className="fa-solid fa-chevron-right ml-2 text-xs" />
             </Button>
 
-            <Button className="min-w-[300px] self-center">
+            <Button
+              onClick={() => router.push("integrations/export-ads")}
+              className="min-w-[300px] self-center"
+            >
               Connect your ad platforms
               <i className="fa-solid fa-chevron-right ml-2 text-xs" />
             </Button>

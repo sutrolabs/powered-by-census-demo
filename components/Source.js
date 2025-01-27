@@ -233,7 +233,7 @@ export default function Source({
               runs={runs}
               devMode={devMode}
               embedMode={embedMode}
-              addNewSyncText={"Configure data to import to Marketing Magnet"}
+              addNewSyncText={"Configure data to import to Acme"}
               stepText={"Step 2: Choose which source objects to sync."}
               useCase={"import"}
               createSyncLinkQueryParams={prefillDestination()}

@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Link from "next/link"
 import { Line } from "react-chartjs-2"
 
@@ -9,6 +10,9 @@ import Header from "@components/Structural/Header/Header"
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Census Embedded Demo App</title>
+      </Head>
       <Header title="Dashboard" />
       <div className="flex h-full flex-col gap-8 overflow-y-auto px-8 py-6">
         <p className=" mx-auto w-full max-w-[1200px] text-neutral-500 ">

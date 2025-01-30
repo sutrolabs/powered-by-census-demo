@@ -1,4 +1,4 @@
-export const marketingMagnetDestinationName = "Marketing Magnet"
+export const marketingMagnetDestinationName = "Acme"
 
 export const marketingMagnetDestinationObject = "user"
 

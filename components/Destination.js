@@ -99,7 +99,7 @@ export default function Destination({
       </Dialog>
       <h3 className="flex flex-row justify-between">
         <span
-          className="flex flex-row items-center gap-2 text-lg font-medium text-neutral-500 data-[enabled]:text-emerald-900"
+          className="flex flex-row items-center gap-2 text-lg font-medium text-neutral-500"
           data-enabled={destination ? "" : null}
         >
           <i className={iconClassName} />

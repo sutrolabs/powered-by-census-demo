@@ -46,7 +46,7 @@ export default function SyncManagement({
 
   return (
     <>
-      <p className="text-emerald-400">{stepText}</p>
+      <p>{stepText}</p>
       <div className="flex flex-col gap-5">
         {syncs.map((sync) => (
           <SyncObject
@@ -77,10 +77,10 @@ export default function SyncManagement({
               shadow-sm"
             onClick={initiateSyncWizardFlow}
           >
-            <a id={`create-sync-${type}`}>
+            <span id={`create-sync-${type}`}>
               <i className="fa-solid fa-plus mr-4" />
               {addNewSyncText}
-            </a>
+            </span>
           </Button>
         ) : null}
       </div>

@@ -69,10 +69,10 @@ export default function SegmentManagement({
               shadow-sm"
             onClick={initiateSegmentWizardFlow}
           >
-            <a id={"create-segment"}>
+            <span id={"create-segment"}>
               <i className="fa-solid fa-plus mr-4" />
               {addNewSegmentText}
-            </a>
+            </span>
           </Button>
         )}
       </div>
